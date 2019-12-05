@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>主页</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<!----menu--->
+<link rel="stylesheet" href="css/superfish.css" media="screen">
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/fun.js"></script>
+<script>
+// initialise plugins
+jQuery(function(){
+	jQuery('#example').superfish({
+//useClick: true
+	});
+});
+</script>
+<script language="JavaScript">
+<!--
+<!-- var password=""; -->
+<!-- password=prompt('请输入密码 (本网站需输入密码才可进入):',''); -->
+<!-- if (password != '0915')    -->
+<!-- {alert("密码不正确,无法进入本站!!");     -->
+<!-- window.opener=null;  -->
+<!-- window.close(); -->
+<!-- }  // 密码不正确就关闭// -->
+-->
+</script>
+</head>
+<body>
+
+
+<div class="wrap1">
+<div class="container">
+  <div class="header">
+    <div class="logo">
+      <h1>Mr.Yao</h1>
+    </div>
+    <div class="menu">
+      <ul class="sf-menu" id="example">
+        <li><a href="index.html">Home</a></li>
+        <li class="current"> <a href="#" onclick="jianli()">简历</a>
+        </li>
+		<!--
+        <li> <a href="#" onclick="img1()">杨杨专属 </a>
+               <ul>
+                <li class="current"><a href="#" onclick="img1()">图片融合</a></li>
+                <li><a href="#" onclick="img2()">3D立体图片相册</a></li>
+                <li><a href="#" onclick="img3()">垂直相册</a></li>
+                <li><a href="#" onclick="img4()">3D图片旋转</a></li>
+                <li><a href="#" onclick="img5()">滑块旋转</a></li>
+              </ul>
+        </li>
+		-->
+        <li> <a href="#" onclick="Log('CSDN')">日志 </a> 
+			   <ul>
+                <li class="current"><a href="#" onclick="Log('CSDN')">CSDN</a></li>
+                <li><a href="#" onclick="Log('MN')">游戏蛮牛</a></li>
+                <li><a href="#" onclick="Log('JS')">简书</a></li>
+                <li><a href="#" onclick="Log('BKY')">博客园</a></li>
+              </ul>
+		</li>
+        <li> <a href="#" onclick="Assets_DemoProject()">资源</a> 
+		      <ul>
+                <li class="current"><a href="#" onclick="Assets_Plugin()">插件</a></li>
+                <li><a href="#" onclick="Assets_ProjectCode()">项目源码</a></li>
+                <li><a href="#" onclick="Assets_Texture()">材质贴图</a></li>
+                <li><a href="#" onclick="Assets_Model()">模型</a></li>
+                <li><a href="#" onclick="Assets_Video()">视频教程</a></li>
+				<li><a href="#" onclick="Assets_Tool()">开发者必备工具</a></li>
+				<li><a href="#" onclick="Assets_DemoProject()">演示项目</a></li>
+              </ul>
+		</li>
+      </ul>
+    </div>
+  </div>
+  <div class="clearing"></div>
+</div>
+<div class="clearing"></div>
+</div>
+<div id="control">
+<!---header-wrap--->
+<div class="wrap2">
+<div class="container">
+  <div class="banner"> <img src="images/5.jpg" alt="banner" />
+    <div class="banner-shadows"></div>
+  </div>
+<div class="clearing"></div>
+</div>
+</div>
+<!---banner-wrap--->
+<div class="wrap3">
+  <div class="container">
+    <div class="box mar-right40">
+      <div class="title">
+        <h1></h1>
+        <h2></h2>
+		<font color="white">从来没有什么可以把你变得焕然一新，站在原地的人，哪怕是新年的每一天都是之前的重演；如果你想要改变一些，那么每天的开始都是等于新的一年。<br>等待的价值，就是让自己变成值得等待的人；等待的同时，你 总得往前走。</font>
+		
+      </div>
+      <div class="content">
+        <p>——卢思浩《愿有人陪你颠沛流离》</p>
+        <!-- <div class="button"><a href="#">更多信息</a></div> -->
+      </div>
+    </div>
+    <div class="box">
+      <div class="title">
+        <h1></h1>
+        <h2></h2>
+		<font color="white">不必太纠结于当下，也不必太忧虑未来，当你经历过一些事<br>情的时候，眼前的风景已经和从前不一样了。<br></br><br></br></font>
+      </div>
+      <div class="content">
+        <p>——树上春树 《1Q84》</p>
+        <!-- <div class="button"><a href="#">更多信息</a></div> -->
+      </div>
+    </div>
+  <div class="clearing"></div>  
+  </div>
+</div><div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
+<!---wrap3--->
+<div class="wrap1 ">
+  <div class="container">
+    <div class="title">
+      <h1>多想陪你</h1>
+    </div>
+    <div class="service mar-right40"> <a href="#" onclick="Img_Show('img1')"><img src="images/img1.jpg" alt="image" /></a>
+      <div class="shadows"></div>
+      <div class="title">
+        <h2>看看大海</h2>
+      </div>
+      <div class="content">
+        <p>去海边吧，每次看到这段话总是会想起你</p>
+        <!-- <div class="button"><a href="#" onclick="Img_Show('img1')”>更多信息</a></div> -->
+      </div>
+    </div>
+    <div class="service mar-right40"> <a href="#" onclick="Img_Show('img2')"><img src="images/img2.jpg" alt="image" /></a>
+      <div class="shadows"></div>
+      <div class="title">
+        <h2>走过小道</h2>
+      </div>
+      <div class="content">
+        <p>想牵着你的手，漫步在这充满着浪漫气息的小道上</p>
+        <!-- <div class="button"><a href="#" onclick="Img_Show('img2')”></a></div> -->
+      </div>
+    </div>
+    <div class="service"> <a href="#" onclick="Img_Show('img3')"><img src="images/img3.jpg" alt="image" /></a>
+      <div class="shadows"></div>
+      <div class="title">
+        <h2>去体验威尼斯水城的魅力</h2>
+      </div>
+      <div class="content">
+        <p>好美的地方，美丽的地方总是会让我想起你</p>
+        <!-- <div class="button"><a href="#" onclick="Img_Show('img3')”></a></div> -->
+      </div>
+    </div>
+  <div class="clearing"></div>  
+  </div>
+  <div class="clearing"></div>
+</div>
+<!---wrap4--->
+<div class="wrap4">
+  <div class="container">
+    <div class="leftcol">
+      <div class="title">
+        <h1>什么是爱情</h1>
+      </div>
+      <div class="panel">
+        <div class="content">
+          <h2>[ài qíng]  爱情 （人类情感）</h2>
+          <p>爱情是人与人之间的强烈的依恋、亲近 、向往，以及无私并且无所不尽其心的情感。它通常是情与欲的对照，爱情由情爱和性爱两个部分组成，情爱是爱情的灵魂，性爱是爱情的能量，情爱是性爱的先决条件，性爱是情爱的动力，只有如此才能达到至高无上的爱情境界。</p>
+          <div class=" button"><a href="https://baike.baidu.com/item/%E7%88%B1%E6%83%85/57?fr=aladdin">更多信息</a></div>
+        </div>
+      </div>
+      <div class="panel borderbotm-none">
+        <div class="content">
+          <h2>[ài]  爱 （人类情感）</h2>
+          <p>一般认为：爱，是指人类主动给予的或自觉期待的满足感和幸福感。爱是人的精神所投射的正能量。是指人主动或自觉地以自己或某种方式，珍重、呵护或满足他人无法独立实现的某种人性需求。包括思想意识、精神体验、行为状态、物质需求等。爱的基础是尊重。爱的本质是无条件地给予，而非索取和得到。所以，爱是一种发自于内心的情感，是人对人或人对某个事物的深挚感情。这种感情所持续的过程也就是爱的过程。通常多见于人与人或人与事物之间。爱是认同、喜欢的高度升华，不同层次的爱对应着不同层次的感受或结果。 </p>
+          <div class=" button"><a href="https://baike.baidu.com/item/%E7%88%B1/433">更多信息</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="rightcol">
+      <div class="title">
+        <h1>TA说</h1>
+      </div>
+      <div class="panel">
+        <div class="content">
+          <ul>
+            <li><a href="https://baike.baidu.com/tashuo/browse/content?id=6774351af0ba51499b3356fb&lemmaId=57&lemmaId=57&fr=qingtian">两种爱情观：宿命论 vs 成长型</a></li>
+            <li><a href="https://baike.baidu.com/tashuo/browse/content?id=7192586e0a7467352b1a51ee&lemmaId=57&lemmaId=57&fr=qingtian">心理学视角：“无条件的爱”存在么？</a></li>
+            <li><a href="https://baike.baidu.com/tashuo/browse/content?id=b699ee53465381862bfa1409&fromModule=pcArticleMoreRecommend">真正完美的爱情包括哪些阶段？ </a></li>
+            <li><a href="https://baike.baidu.com/tashuo/browse/content?id=a8000801382d5fd97170f3c0&fromModule=pcArticleMoreRecommend">为什么关系越好的人之间，越容易产生矛盾？</a></li>
+            <li><a href="https://baike.baidu.com/tashuo/browse/content?id=4507e4544d6411e14d612d20&fromModule=pcArticleMoreRecommend">贫穷不是爱情的阻碍，贫穷思维才是 </a></li>
+            <li><a href="https://baike.baidu.com/tashuo/browse/content?id=cb22cd371bea0f25ce5c69c3&fromModule=pcArticleMoreRecommend">皇后钮祜禄氏：与君一起经风雨，君去徒留旧山河</a></li>
+            <li><a href="https://baike.baidu.com/tashuo/browse/content?id=dfe1324092155f68bfb97fc1&fromModule=pcArticleMoreRecommend">停止你的伪佛系，今天起做一个“兽系青年”</a></li>
+            <li><a href="https://baike.baidu.com/tashuo/browse/content?id=45bd8fd35086aab5b7d81097&fromLemmaModule=pcTopicList&fromTopicId=242a1308b638edde401c4525">柏拉图式恋爱？别做梦了！</a></li>
+            <li><a href="https://baike.baidu.com/tashuo/browse/content?id=121b5b2a7586065bb9eeb3f4&fromLemmaModule=pcTopicList&fromTopicId=242a1308b638edde401c4525">最好的爱情，金庸一句话就写完了</a></li>
+            <li class="borderbotm-none"><a href="https://baike.baidu.com/tashuo/browse/content?id=bef8f72684a44c87bab863f3&fromLemmaModule=pcTopicList&fromTopicId=242a1308b638edde401c4525">苦不是爱的一部分，但苦是爱达成的必经之路</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <div class="clearing"></div>  
+  </div>
+ </div>
+</div>
+
+<div class="main-container" id="main" style="width:100%">
+ <iframe src="" width="" height="" frameborder="0" id="iframe">
+ 您的浏览器不支持iframe，请升级
+ </iframe>
+</div>
+<!---wrap4--->
+<div class="wrap3">
+<div class="container">
+  <div class="footer">版权 &copy; 2018-2019.版权所有. 
+  Homeage  -from -<a href="http://qq764424567.top" target="_blank" title="个人主页">个人主页</a> 
+  Resume   -from -<a href="#" onclick="jianli()">个人简历</a>
+  <br></br><a href="http://www.miitbeian.gov.cn">豫ICP备18017921号</a>
+  </div>
+	
+	<div class="footer"></div>
+  <div class="clearing"></div>
+</div>
+</div>
+<div class="shadows2">
+</div>
+
+
+</body>
+</html>

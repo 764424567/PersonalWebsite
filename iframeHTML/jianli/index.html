@@ -1,0 +1,859 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>个人博客网站</title>
+<link href="css/reset.css" rel="stylesheet" media="screen">
+<link href="css/style.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+.tab td{font-weight:bold;}
+</style>
+<style type="text/css">
+table.hovertable {
+font-family: verdana,arial,sans-serif;
+font-size:31px;
+color:#333333;
+border-width: 1px;
+border-color: #999999;
+border-collapse: collapse;
+}
+table.hovertable th {
+background-color:#c3dde0;
+border-width: 1px;
+padding: 8px;
+border-style: solid;
+border-color: #a9c6c9;
+}
+table.hovertable tr {
+background-color:#d4e3e5;
+}
+table.hovertable td {
+border-width: 1px;
+padding: 8px;
+border-style: solid;
+border-color: #a9c6c9;
+}
+</style>
+</head>
+
+<body>
+<div id="page">
+  <aside id="sidebar">
+    <nav><a class="logo" href="#top" id="nav-logo"><span>个人综合博客</span>软件工程师</a>
+      <!-- <ul> -->
+     	<!-- <li class="active" id="nav-1"><a href="#main-content">首页</a></li> -->
+        <!-- <li id="nav-2"><a href="#work">简历</a></li> -->
+        <!-- <li id="nav-3"><a href="#about">关于</a></li> -->
+        <!-- <li id="nav-4"><a href="#contact">联系</a></li> -->
+      <!-- </ul> -->
+      <!-- <div class="bg_bottom"></div> -->
+    </nav>
+  </aside>
+  <section id="main-content">
+    <div id="loader" class="loader"></div>
+    <div id="ps_container" class="ps_container"> <span class="ribbon"></span>
+      <div class="ps_image_wrapper">
+        <!-- First initial image -->
+        <img src="img/img2.jpg" alt="" /></div>
+      <!-- Navigation items -->
+      <div class="ps_next"></div>
+      <div class="ps_prev"></div>
+      <!-- Dot list with thumbnail preview -->
+      <ul class="ps_nav">
+        <li class="selected"><a href="img/img2.jpg" rel="img/thumbs/img2.jpg">Image 1</a></li>
+        <li><a href="img/img1.jpg" rel="img/thumbs/img1.jpg">Image 2</a></li>
+        <li><a href="img/img3.jpg" rel="img/thumbs/img3.jpg">Image 3</a></li>
+        <li><a href="img/img4.jpg" rel="img/thumbs/img4.jpg">Image 4</a></li>
+        <li><a href="img/img5.jpg" rel="img/thumbs/img5.jpg">Image 5</a></li>
+        <li class="ps_preview">
+          <div class="ps_preview_wrapper">
+            <!-- Thumbnail comes here -->
+          </div>
+          <!-- Little triangle -->
+          <span></span></li>
+      </ul>
+    </div>
+    <!--end ps_container-->
+    <header class="divider intro-text">
+      <h2>Welcome to my website </h2>
+      <!-- <div class="contact-me"><a class="contact button" href="#contact">Contact Me</a></div>-->
+    </header>
+    <div class="recent-work columns">
+      <h3>This is my latest project</h3>
+      <div class="two-column">
+        <figure><a href="img/work_1_1.jpg" rel="recent_work" class="zoom"><img src="img/work_1.jpg" alt="Image"></a></figure>
+      </div>
+      <div class="two-column last">
+        <figure><a href="img/work_2_1.jpg" rel="recent_work" class="zoom"><img src="img/work_2.jpg" alt="Image"></a></figure>
+      </div>
+    </div>
+    </section>
+    <section id="main-content">
+	<section id="jianli">
+    <div class="my-services columns">
+      <h3>我的简历</h3>
+      <div class="three-column">
+        <h4>简述</h4>
+        <p>        
+        <table>
+          <tr>
+            <th>姓名：</th>
+            <td>张尧</td>
+          </tr>
+          <tr>
+            <th>性别：</th>
+            <td>男</td>
+          </tr>
+          <tr>
+            <th>工作经验：</th>
+            <td>3年</td>
+          </tr>
+          <tr>
+            <th>毕业学校：</th>
+            <td>河南工业职业技术学院</td>
+          </tr>
+          <tr>
+            <th>专业：</th>
+            <td>软件技术</td>
+          </tr>
+          <tr>
+            <th>联系电话：</th>
+            <td>15138668269</td>
+          </tr>
+          <tr>
+            <th>电子邮箱：</th>
+            <td>764424567@qq.com</td>
+          </tr>
+        </table>
+        <p></p>
+      </div>
+      <div class="three-column">
+        <h4>职业技能</h4>
+        <p>        
+        <table  width="" border="0" class="tab">
+          <tr>
+            <td>（1）  精通C#，熟练掌握C、C++，熟悉Lua、JavaScript</td>
+          </tr>
+          <tr>
+            <td>（2）  熟练掌握Unity开发引擎，熟练使用Unity3D常用插件</td>
+          </tr>
+          <tr>
+            <td>（3）  熟悉VR游戏开发流程，能独立开发VR游戏。熟悉OptiTrack、Oculus、HTC vive等VR设备的操作与使用。</td>
+          </tr>
+          <tr>
+            <td>（4）  熟悉Unity游戏性能优化，资源优化，摄像机镜头效果优化等</td>
+          </tr>
+          <tr>
+            <td>（5）  熟悉服务器端Server跟客户端Client协同开发，熟悉网络Socket编程、Http协议及相关编程</td>
+          </tr>
+          <tr>
+            <td>（6）  熟练人工智能AI，擅长写AI逻辑，熟练运用对象池技术</td>
+          </tr>
+          <tr>
+            <td>（7）  熟悉常用设计模式和算法</td>
+          </tr>
+          <tr>
+            <td>（8）  熟悉游戏安卓SDK接入</td>
+          </tr>
+          <tr>
+            <td>（9）  熟悉Sql Server数据库操作</td>
+          </tr>
+          <tr>
+            <td>（10） 了解3D数学、OpenGl图形图像学知识、了解GPU渲染流程</td>
+          </tr>
+          <tr>
+            <td>（11） 了解三维建模软件(3DMAX、Maya)的基本操作</td>
+          </tr>
+        </table>
+        <p></p>
+      </div>
+      <div class="three-column last">
+        <h4>求职意向</h4>
+        <p>        
+        <table>
+          <tr>
+            <th width="72" height="32">工作性质：</th>
+            <td width="116">全职</td>
+          </tr>
+          <tr>
+            <th>期望职业：</th>
+            <td>软件工程师、游戏设计/开发、游戏界面设计</td>
+          </tr>
+          <tr>
+            <th>期望行业：</th>
+            <td>IT服务(系统/数据/维护)、计算机软件、互联网/电子商务</td>
+          </tr>
+          <tr>
+            <th>工作地区：</th>
+            <td>郑州</td>
+          </tr>
+          <tr>
+            <th>期望月薪：</th>
+            <td>面议</td>
+          </tr>
+          <tr>
+            <th>目前状况：</th>
+            <td>我目前处于离职状态，可立即上岗</td>
+          </tr>
+        </table>
+        <p></p>
+      </div>
+    </div>
+    <div class="jingli">
+      <h4>工作经历</h4>
+      <p>      
+      <table>
+        <tr>
+          <th width="223" height="24">2017/10 - 2018/04</th>
+          <td width="435">郑州虎鱼动漫设计有限公司</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>u3d开发工程师</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>互联网/电子商务| 企业性质：民营| 规模：20-99人</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>工作描述：在任职期间，独立开发包括VR房地产、VR商城、VR管网等在内的多个VR体验项目。负责公司软件方面的技术支持，包括软件跟硬件对接，前端跟后端对接，服务器跟客户端之间的对接工作。负责项目分析，日程规划，项目进度把控等。</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th width="223" height="24">2015/08 - 2017/8</th>
+          <td width="435">界源科技（北京）有限公司 </td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>u3d开发工程师</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>计算机软件| 企业性质：民营| 规模：20-99人</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>工作描述：1.根据策划需求，完成主程安排的工作，完成相应模块的开发
+            2.根据策划要求，完成VR项目的构架、设计和开发
+            3.后期项目的测试与修改</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th width="223" height="24">2015/01 - 2015/7</th>
+          <td width="435">广州傲玩科技有限公司</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>游戏开发工程师实习</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>互联网/电子商务| 企业性质：民营| 规模：100-499人</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>工作描述：1.配合主程序完成游戏架构及各大功能的设计、开发、调试和其他技术支持 
+            2.完成游戏客户端模块代码及相关文档的书写、优化对已完成代码进行单元测试 
+            3.管理维护游戏平台的制作与运行 
+            4.与团队其他人员配合，促进游戏的改进创新</td>
+        </tr>
+      </table>
+    </div>
+    <div class="jingyan">
+      <h4>项目经验</h4>
+      <table>
+        <tr>
+          <th width="161">2018/01 - 2018/04</th>
+          <td width="787">工地安全VR体验项目</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>软件环境：Windows7</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>硬件环境：台式机</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>开发工具：Unity2017.1 、Visual Studio 2017</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>责任描述：负责整个项目分析，日程进度管理，人员配合管理等
+负责整个项目程序编写，项目测试修改，项目流畅度优化等
+负责整个项目与客户对接，根据客户反馈修改程序</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>项目简介：这是一个工地安全VR体验的项目，主要用于新工人的安全意识培养，让工人在真实的VR中，感受到如果不按照规定操作，或者平时疏忽之后会造成多大的事故，让人亲身感受到事故的危险性与可怕性，以及安全培训项目，心肺复苏流程，如何自救，如何救助他人等</td>
+       </tr>
+      </table>
+      <table>
+        <tr>
+          <th width="161">2017/10 - 2017/12</th>
+          <td width="787">北京伊甸城项目（VR）</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>软件环境：Windows7</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>硬件环境：台式机</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>开发工具：Unity5.6.3 、Visual Studio 2017</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>责任描述：负责整个项目分析，日程规划，人员配合对接等。负责项目进度管理，推进项目进度。负责整个项目的代码编写，项目测试，项目优化等。负责项目的发布，PC端，还有安卓端跟IOS端的屏幕自适应优化，横竖版切换之后界面优化等。</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>项目简介：这个一个商城漫游的项目，随处可见的大树，上升的气球，巨大的横幅，广告牌，彩灯LED，桌椅，再配合上VR全沉浸式体验，让人身临其境的感受商城的魅力。包括里面还有各个商铺的介绍，商铺排名，商铺位置搜索等，还有商品出售， 让人不出家门就能体验到逛街的快感。包括手机版还有车辆定位、车辆停车缴费，好友聊天功能。</td>
+       </tr>
+      </table>
+      <table>
+        <tr>
+          <th width="161">2017/01 - 2017/07</th>
+          <td width="787">星际大战（VR）</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>软件环境：Windows7</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>硬件环境：台式机</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>开发工具：Unity3d+VisualStudio</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>责任描述：怪物AI模式设计
+怪物AI行动路线设计
+其他功能模块的开发</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>项目简介：VR独有“沉浸式”体验，在无人的星球上，与各种各样的强大怪物对抗，有飞行的机械龙，变异鸟类怪物，陆地坦克怪物，摧毁所有怪物赢得胜利。配合Oculus与Unity3d真实场景，带领玩家进入另一个不同的世界。</td>
+       </tr>
+      </table>
+      <table>
+        <tr>
+          <th width="161">2016/05 - 2016/12</th>
+          <td width="787">墓影迷踪(VR)</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>软件环境：Windows7</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>硬件环境：台式机</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>开发工具：Unity3d+VisualStudio</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>责任描述：1.Optitrack全身动作捕捉设备的调试与维护，Motive软件与Unity3d之间的数据交互
+2.Oculus设备与Unity3d的交互
+3.Photon服务器的搭建，服务器与客户端的开发
+4.服务器接收与解析json字符串
+5.机关流程控制，与人物的交互</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>项目简介：以鬼吹灯为题材的古墓探险VR游戏，逼真的场景，在VR画面与真实场景结合下，可以与场景产生多种互动，虚实结合，带来全新的“全感体验”。使用Optical motion capture software配合Oculus与Unity3d真实场景，带领玩家进入另一个不同的世界。</td>
+       </tr>
+      </table>
+      <table>
+        <tr>
+          <th width="161">2015/09 - 2016/03</th>
+          <td width="787">病原体(VR)</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>软件环境：Windows7</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>硬件环境：台式机</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>开发工具：Unity3d+VisualStudio</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>责任描述：1.界面UI的搭建
+2.硬件设备与Unity3d之间数据交互，坐标同步等
+3.根据策划文档完成相应的逻辑代码模块，负责游戏相关模块的优化和日常维护。
+5.主界面搭建，对UI优化
+6.数据的传输Motive数据与Unity数据坐标同步优化等</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>项目简介：VR独有“沉浸式”体验，结合丧尸恐怖元素，临场感与恐怖感将发挥到极致，惊险刺激。带给您前所未有的超级真实的震撼体验。使用Optical motion capture software配合Oculus与Unity3d真实场景，带领玩家进入另一个不同的世界。</td>
+       </tr>
+      </table>
+      <table>
+        <tr>
+          <th width="161">2015/03 - 2015/07</th>
+          <td width="787">天尊HD（手游）</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>软件环境：Windows7</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>硬件环境：台式机</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>开发工具：Unity3d+VisualStudio</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>责任描述：1. 战斗场景的搭建
+2. 在战斗场景中主角各项功能的实现，包括技能效果，技能连击，人物称号显示
+3. 小怪AI功能实现，小怪FSM实现
+4. 角色的攻击值计算与小怪交互</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>项目简介：《天尊HD》手游由小说改编而成，采用Unity3D引擎，高动态范围（HDR）3D渲染技术，倾情打造的一款3D RPG动作手游。酷炫的特效，高清的场景，有趣的故事情节，带来不一样的游戏体验。</td>
+       </tr>
+      </table>
+      <table>
+        <tr>
+          <th width="161">2015/01 - 2015/03</th>
+          <td width="787">疯狂捕鱼达人（手游）</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>软件环境：Windows7</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>硬件环境：台式机</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>开发工具：Unity3d+VisualStudio</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>责任描述：主界面的Bug修复
+抽奖模块的开发与测试
+签到模块的开发与测试
+成绩结算模块的开发与测试</td>
+       </tr>
+       <tr>
+          <th></th>
+          <td>项目简介：这是一款模仿街机电玩的捕鱼达人游戏，秉承了街机游戏的原汁原味的基础上，加上了人物技能，与道具，还有各种游戏模式的加入，让玩家有了更多新奇的体验等</td>
+       </tr>
+      </table>
+    </div>
+    <div class="one-column columns testimony">
+      <div class="clearfix says">
+        <figure class="marginRight"><img src="img/imgMy_small.jpg" alt="Image" /></figure>
+        <blockquote>
+          <p>有很强的学习能力，乐于接受新技术，热爱编程。能独立开发VR游戏。对VR、AR了解比较多</p>
+          <cite>&mdash; <a href="#">张尧</a></cite></blockquote>
+      </div>
+    </div>
+	</section>
+  </section>
+  <div id="main-content">
+  	<section id="top"></section><!-- do not remove ;)--><!--end section-->
+    
+    <section id="work" class="clearfix">
+      <header>
+        <h2>演示项目</h2>
+      </header>
+      <ul class="projects list">
+      	<li><figure><a href="img/img1.jpg" rel="work"><img src="img/word_1.jpg" alt="Image" /></a>
+        <figcaption><a href="http://webdesigneraid.com/">智慧商城项目<span>&nbsp;&rarr;</span></a></figcaption>
+        </figure>
+        
+        </li>
+        <li><figure><a href="img/img2.jpg" rel="work"><img src="img/word_2.jpg" alt="Image" /></a>
+        <figcaption><a href="http://webdesigneraid.com/">北京伊甸城项目<span>&nbsp;&rarr;</span></a></figcaption>
+        </figure></li>
+        <li class="last"><figure><a href="img/img3.jpg" rel="work"><img src="img/word_3.jpg" alt="Image" /></a>
+        <figcaption><a href="http://webdesigneraid.com/">热力管道VR项目<span>&nbsp;&rarr;</span></a></figcaption>
+        </figure></li><!-- three columns-->
+        
+        <li><figure><a href="img/img4.jpg" rel="work"><img src="img/word_4.jpg" alt="Image" /></a>
+        <figcaption><a href="http://webdesigneraid.com/">智慧检务大厅项目<span>&nbsp;&rarr;</span></a></figcaption>
+        </figure></li>
+        <li><figure><a href="img/img5.jpg" rel="work"><img src="img/word_5.jpg" alt="Image" /></a>
+        <figcaption><a href="http://webdesigneraid.com/">数字城市项目<span>&nbsp;&rarr;</span></a></figcaption>
+        </figure></li>
+        <li class="last"><figure><a href="img/img6.jpg" rel="work"><img src="img/word_6.jpg" alt="Image" /></a>
+        <figcaption><a href="http://webdesigneraid.com/">西安白鹿原项目<span>&nbsp;&rarr;</span></a></figcaption>
+        </figure></li>
+        <li><figure><a href="img/img7.jpg" rel="work"><img src="img/word_7.jpg" alt="Image" /></a>
+        <figcaption><a href="http://webdesigneraid.com/">船舶数据传输demo<span>&nbsp;&rarr;</span></a></figcaption>
+        </figure></li>
+        <li><figure><a href="img/img8.jpg" rel="work"><img src="img/word_8.jpg" alt="Image" /></a>
+        <figcaption><a href="http://webdesigneraid.com/">VR玫瑰庄园项目<span>&nbsp;&rarr;</span></a></figcaption>
+        </figure></li>
+        <li class="last"><figure><a href="img/img9.jpg" rel="work"><img src="img/word_9.jpg" alt="Image" /></a>
+        <figcaption><a href="http://webdesigneraid.com/">串佛高速项目<span>&nbsp;&rarr;</span></a></figcaption>
+        </figure></li>
+      </ul>
+    </section> <!--end section-->
+    
+    <section id="about" class="clearfix">	
+      <header>
+        <h2>who is he?</h2>
+      </header>
+      
+      
+      <figure class="contact"><img src="img/imgMy.jpg" alt="Image" /></figure>
+        <p>张尧，男，1993年10月9日出生于平顶山市，毕业于河南工业职业技术学院，软件工程师、游戏开发工程师。2014年，参加“蓝桥杯”软件设计创业大赛获得三等奖。</p>
+       	<div class="clearfix"></div>
+        <h3>技能</h3>
+        <ul class="skills">
+        	<li>Unity3D <span class="bar_100"><span class="percent">100%</span></span></li>
+        	<li>C# <span class="bar_90"><span class="percent">90%</span></span></li>
+            <li>Sql Server<span class="bar_50"><span class="percent">50%</span></span></li>
+            <li>C / C++<span class="bar_70"><span class="percent">70%</span></span></li>
+            <li>JavaScript<span class="bar_60"><span class="percent">60%</span></span></li>
+            <li>HTML<span class="bar_50"><span class="percent">50%</span></span></li>
+        </ul>
+        </br></br>
+
+    </section> <!--end section-->
+	
+    
+	<section id="contact" class="clearfix">
+      <header>
+        <h2>取得联系</h2>
+      </header>
+		<table class="hovertable">
+		<tr onMouseOver="this.style.backgroundColor='#ffff66';" onMouseOut="this.style.backgroundColor='#d4e3e5';">
+		<th>名字：</th><td>张尧</td>
+		</tr>
+		<tr onMouseOver="this.style.backgroundColor='#ffff66';" onMouseOut="this.style.backgroundColor='#d4e3e5';">
+		<th>邮箱：</th>
+		<td>764424567@qq.com</td>
+		</tr>
+		<tr onMouseOver="this.style.backgroundColor='#ffff66';" onMouseOut="this.style.backgroundColor='#d4e3e5';">
+		<th>微信：</th>
+		<td>yao_11521</td>
+		</tr>
+		<tr onMouseOver="this.style.backgroundColor='#ffff66';" onMouseOut="this.style.backgroundColor='#d4e3e5';">
+		<th>QQ：</th>
+		<td>764424567</td>
+		</tr>
+		<tr onMouseOver="this.style.backgroundColor='#ffff66';" onMouseOut="this.style.backgroundColor='#d4e3e5';">
+		<th>我的个人网站：</th>
+		<td>qq764424567.top</td>
+		</tr>
+		</table>
+      <div class="social_wrapper">
+        	<h3>在哪里可以找到我?</h3>
+            <ul class="social">
+            	<li class="dribble"><a href="https://blog.csdn.net/q764424567">Dribble</a></li>
+                <li class="twitter"><a href="#">Twitter</a></li>
+                <li class="lastfm"><a href="#">Last FM</a></li>
+                <li class="facebook"><a href="#">Facebook</a></li>
+                <li class="location"><a href="#">Location</a></li>
+                <li class="forrst"><a href="#">Forrst</a></li>
+            </ul>
+       </div>   
+    </section> <!--end section-->
+
+	</div>
+<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script> 
+<script type="text/javascript" src="js/jquery_003.js"></script> 
+<script type="text/javascript" src="js/jquery.js"></script> 
+
+<!-- The JavaScript --> 
+<script type="text/javascript">
+			/*
+			the images preload plugin
+			*/
+			(function($) {
+				$.fn.preload = function(options) {
+					var opts 	= $.extend({}, $.fn.preload.defaults, options),
+						o		= $.meta ? $.extend({}, opts, this.data()) : opts;
+					return this.each(function() {
+						var $e	= $(this),
+							t	= $e.attr('rel'),
+							i	= $e.attr('href'),
+							l	= 0;
+						$('<img/>').load(function(i){
+							++l;
+							if(l==2) o.onComplete();
+						}).attr('src',i);	
+						$('<img/>').load(function(i){
+							++l;
+							if(l==2) o.onComplete();
+						}).attr('src',t);	
+					});
+				};
+				$.fn.preload.defaults = {
+					onComplete	: function(){return false;}
+				};
+			})(jQuery);
+		</script> 
+<script type="text/javascript">
+			$(function() {
+				//some elements..
+				var $ps_container		= $('#ps_container'),
+					$ps_image_wrapper 	= $ps_container.find('.ps_image_wrapper'),
+					$ps_next			= $ps_container.find('.ps_next'),
+					$ps_prev			= $ps_container.find('.ps_prev'),
+					$ps_nav				= $ps_container.find('.ps_nav'),
+					$tooltip			= $ps_container.find('.ps_preview'),
+					$ps_preview_wrapper = $tooltip.find('.ps_preview_wrapper'),
+					$links				= $ps_nav.children('li').not($tooltip),
+					total_images		= $links.length,
+					currentHovered		= -1,
+					current				= 0,
+					$loader				= $('#loader');
+				
+				/*check if you are using a browser*/	
+				var ie 				= false;
+				if ($.browser.msie) {
+					ie = true;//you are not!Anyway let's give it a try
+				}
+				if(!ie)
+					$tooltip.css({
+						opacity	: 0
+					}).show();
+					
+					
+				/*first preload images (thumbs and large images)*/
+				var loaded	= 0;
+				$links.each(function(i){
+					var $link 	= $(this);
+					$link.find('a').preload({
+						onComplete	: function(){
+							++loaded;
+							if(loaded == total_images){
+								//all images preloaded,
+								//show ps_container and initialize events
+								$loader.hide();
+								$ps_container.show();
+								//when mouse enters the pages (the dots),
+								//show the tooltip,
+								//when mouse leaves hide the tooltip,
+								//clicking on one will display the respective image	
+								$links.bind('mouseenter',showTooltip)
+									  .bind('mouseleave',hideTooltip)
+									  .bind('click',showImage);
+								//navigate through the images
+								$ps_next.bind('click',nextImage);
+								$ps_prev.bind('click',prevImage);
+							}
+						}
+					});
+				});
+				
+				function showTooltip(){
+					var $link			= $(this),
+						idx				= $link.index(),
+						linkOuterWidth	= $link.outerWidth(),
+						//this holds the left value for the next position
+						//of the tooltip
+						left			= parseFloat(idx * linkOuterWidth) - $tooltip.width()/2 + linkOuterWidth/2,
+						//the thumb image source
+						$thumb			= $link.find('a').attr('rel'),
+						imageLeft;
+					
+					//if we are not hovering the current one
+					if(currentHovered != idx){
+						//check if we will animate left->right or right->left
+						if(currentHovered != -1){
+							if(currentHovered < idx){
+								imageLeft	= 75;
+							}
+							else{
+								imageLeft	= -75;
+							}
+						}
+						currentHovered = idx;
+						
+						//the next thumb image to be shown in the tooltip
+						var $newImage = $('<img/>').css('left','0px')
+												   .attr('src',$thumb);
+						
+						//if theres more than 1 image 
+						//(if we would move the mouse too fast it would probably happen)
+						//then remove the oldest one (:last)
+						if($ps_preview_wrapper.children().length > 1)
+							$ps_preview_wrapper.children(':last').remove();
+						
+						//prepend the new image
+						$ps_preview_wrapper.prepend($newImage);
+						
+						var $tooltip_imgs		= $ps_preview_wrapper.children(),
+							tooltip_imgs_count	= $tooltip_imgs.length;
+							
+						//if theres 2 images on the tooltip
+						//animate the current one out, and the new one in
+						if(tooltip_imgs_count > 1){
+							$tooltip_imgs.eq(tooltip_imgs_count-1)
+										 .stop()
+										 .animate({
+											left:-imageLeft+'px'
+										  },150,function(){
+												//remove the old one
+												$(this).remove();
+										  });
+							$tooltip_imgs.eq(0)
+										 .css('left',imageLeft + 'px')
+										 .stop()
+										 .animate({
+											left:'0px'
+										  },150);
+						}
+					}
+					//if we are not using a "browser", we just show the tooltip,
+					//otherwise we fade it
+					//
+					if(ie)
+						$tooltip.css('left',left + 'px').show();
+					else
+					$tooltip.stop()
+							.animate({
+								left		: left + 'px',
+								opacity		: 1
+							},150);
+				}
+				
+				function hideTooltip(){
+					//hide / fade out the tooltip
+					if(ie)
+						$tooltip.hide();
+					else
+					$tooltip.stop()
+						    .animate({
+								opacity		: 0
+							},150);
+				}
+				
+				function showImage(e){
+					var $link				= $(this),
+						idx					= $link.index(),
+						$image				= $link.find('a').attr('href'),
+						$currentImage 		= $ps_image_wrapper.find('img'),
+						currentImageWidth	= $currentImage.width();
+					
+					//if we click the current one return
+					if(current == idx) return false;
+					
+					//add class selected to the current page / dot
+					$links.eq(current).removeClass('selected');
+					$link.addClass('selected');
+					
+					//the new image element
+					var $newImage = $('<img/>').css('left',currentImageWidth + 'px')
+											   .attr('src',$image);
+					
+					//if the wrapper has more than one image, remove oldest
+					if($ps_image_wrapper.children().length > 1)
+						$ps_image_wrapper.children(':last').remove();
+					
+					//prepend the new image
+					$ps_image_wrapper.prepend($newImage);
+					
+					//the new image width. 
+					//This will be the new width of the ps_image_wrapper
+					var newImageWidth	= $newImage.width();
+				
+					//check animation direction
+					if(current > idx){
+						$newImage.css('left',-newImageWidth + 'px');
+						currentImageWidth = -newImageWidth;
+					}	
+					current = idx;
+					//animate the new width of the ps_image_wrapper 
+					//(same like new image width)
+					$ps_image_wrapper.stop().animate({
+					    width	: newImageWidth + 'px'
+					},350);
+					//animate the new image in
+					$newImage.stop().animate({
+					    left	: '0px'
+					},350);
+					//animate the old image out
+					$currentImage.stop().animate({
+					    left	: -currentImageWidth + 'px'
+					},350);
+				
+					e.preventDefault();
+				}				
+				
+				function nextImage(){
+					if(current < total_images){
+						$links.eq(current+1).trigger('click');
+					}
+				}
+				function prevImage(){
+					if(current > 0){
+						$links.eq(current-1).trigger('click');
+					}
+				}
+			});
+        </script>
+        <script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript">
+
+		$(document).ready(function() {
+			
+			
+			$('.projects li figure a img').animate({'opacity' : 1}).hover(function() {
+				$(this).animate({'opacity' : .5});
+			}, function() {
+				$(this).animate({'opacity' : 1});
+			});
+			$('.zoom img').animate({'opacity' : 1}).hover(function() {
+				$(this).animate({'opacity' : .5});
+			}, function() {
+				$(this).animate({'opacity' : 1});
+			});
+
+			$("a[rel=work]").fancybox({
+				'transitionIn'		: 'elastic',
+				'transitionOut'		: 'elastic',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+			$("a[rel=recent_work]").fancybox({
+				'transitionIn'		: 'elastic',
+				'transitionOut'		: 'elastic',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+			
+		});
+	</script>
+</body>
+</html>
